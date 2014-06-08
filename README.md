@@ -9,8 +9,17 @@ Thanks to G.A. Bird for his program code and Yazhong Jiang for his kind help dur
 
 ### Version:
 Ver 1.0
-32bit OpenMP
 64bit OpenMP
+
+### Usage
+The code is originally compiled with Intel Cluster Studio 2013 SP1 and Visual Studio 2012 update4. There exists some bug in the collision part when the grid is exteremely large. The bug is heap overflow and caused by Intel Fortran Compiler OpenMP. A simple way to deal with it is to delete the code for parallel in the COLLISION.F90. 
+
+The code should be compiled in 64 bit. If you know how to compile CGNS and include it in the solution, you could use your own compile 32bit CGNS to replace the files in CGNS directory. 
+
+I'm currently still dealing with my graduate thesis thus I have no time to write a makefile in order that the program could be easily compiled for Linux. But I'll achieve this as soon as possible since the program should obey free software spirit. :-) We are struggling for the development of humman beings but not money!!
+
+### Thanks
+To my forever lover, 19850726! Wish you will have a bright future!
 
 
 ### Copyright © Han Luo
