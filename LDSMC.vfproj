@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{5497B241-6D6B-4CEF-8E8E-6C72AF1E78EC}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" AdditionalIncludeDirectories="CGNS\include" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="CGNS\lib" IgnoreDefaultLibraryNames="LIBCMT" GenerateDebugInformation="true" SubSystem="subSystemConsole" StackReserveSize="104857600" AdditionalDependencies="cgns.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" AdditionalIncludeDirectories="CGNS\include" OpenMP="OpenMPParallelCode"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole" StackReserveSize="104857600"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" AdditionalIncludeDirectories="CGNS\include" OpenMP="OpenMPParallelCode" WarningsAsErrors="true" OpenMPDiagLevel="openMPDiagLevel2" ParallelizerDiagLevel="parallelizerDiagLevel3" VectorizerDiagLevel="vectorizerDiagLevel6" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="CGNS\lib" IgnoreDefaultLibraryNames="LIBCMT" GenerateDebugInformation="true" SubSystem="subSystemConsole" StackReserveSize="104857600" AdditionalDependencies="cgns.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeDisabled" AdditionalIncludeDirectories="CGNS\include" OpenMP="OpenMPParallelCode"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="CGNS\lib" SubSystem="subSystemConsole" StackReserveSize="104857600" AdditionalDependencies="cgns.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="COMPLEXDATA">
+		<File RelativePath=".\COMPLEXDATA\BEDGE_CHAIN.F90"/>
+		<File RelativePath=".\COMPLEXDATA\BIN_TREE.F90"/></Filter>
+		<Filter Name="FUNCTION">
+		<File RelativePath=".\FUNCTION\ADD_ONE.f90"/>
+		<File RelativePath=".\FUNCTION\ERF.F90"/>
+		<File RelativePath=".\FUNCTION\GAM.F90"/>
+		<File RelativePath=".\FUNCTION\HASH.f90"/>
+		<File RelativePath=".\FUNCTION\LIN2_SOL.F90"/>
+		<File RelativePath=".\FUNCTION\MINUS_ONE.F90"/>
+		<File RelativePath=".\FUNCTION\VEC_PRODUCT.F90"/></Filter>
+		<Filter Name="GASDATABASE">
+		<File RelativePath=".\GASDATABASE\ARGON.F90"/>
+		<File RelativePath=".\GASDATABASE\HARD_SPHERE.F90"/>
+		<File RelativePath=".\GASDATABASE\IDEAL_AIR.F90"/>
+		<File RelativePath=".\GASDATABASE\IDEAL_NITROGEN.F90"/>
+		<File RelativePath=".\GASDATABASE\REAL_NITROGEN.F90"/></Filter>
+		<File RelativePath=".\ALLOCATE_GAS.F90"/>
+		<File RelativePath=".\CLL.F90"/>
+		<File RelativePath=".\COLLISION.F90"/>
+		<File RelativePath=".\DIS_DETECT.F90"/>
+		<File RelativePath=".\EXTEND_MNM.F90"/>
+		<File RelativePath=".\INDEX_MOLS.F90"/>
+		<File RelativePath=".\INITIALISE_SAMPLES.F90"/>
+		<File RelativePath=".\INTERSECT_DETECT.F90"/>
+		<File RelativePath=".\INTERSECT_SOL.F90"/>
+		<File RelativePath=".\LBS.F90"/>
+		<File RelativePath=".\LDSMC.F90"/>
+		<File RelativePath=".\MOD.F90"/>
+		<File RelativePath=".\MOLECULES_COL.F90"/>
+		<File RelativePath=".\MOLECULES_ENTER.F90"/>
+		<File RelativePath=".\MOLECULES_MOVE.F90"/>
+		<File RelativePath=".\OUTPUT_RESULT.F90"/>
+		<File RelativePath=".\POSITION_GEN.F90"/>
+		<File RelativePath=".\POST.F90"/>
+		<File RelativePath=".\PRE.F90"/>
+		<File RelativePath=".\RANK.F90"/>
+		<File RelativePath=".\READ_DATA.F90"/>
+		<File RelativePath=".\READ_RESTART.F90"/>
+		<File RelativePath=".\REFLECT_2D.F90"/>
+		<File RelativePath=".\RVELC.F90"/>
+		<File RelativePath=".\SAMPLE_FLOW.F90"/>
+		<File RelativePath=".\SEARCH_CCELL.F90"/>
+		<File RelativePath=".\SEARCH_CELL.F90"/>
+		<File RelativePath=".\SET_INITIAL_STATE.F90"/>
+		<File RelativePath=".\SROT.F90"/>
+		<File RelativePath=".\SVIB.F90"/>
+		<File RelativePath=".\SYM_MOL.F90"/>
+		<File RelativePath=".\TOUCH_BOUND.F90"/>
+		<File RelativePath=".\TRANSIENT_SUBCELL.F90"/>
+		<File RelativePath=".\WRITE_RESTART.F90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
