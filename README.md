@@ -5,7 +5,6 @@ This project is developed by myself as a part of my graduate thesis. The program
 
 Anyone who is interested in the project could contact me by E-mail. My E-mail is han.luo@gmail.com. You can also visit my blog at http://luohan.phpapps.jp.
 
-Thanks to G.A. Bird for his program code and Yazhong Jiang for his kind help during the development. 
 
 ### Version:
 Ver 1.0
@@ -19,7 +18,8 @@ The code should be compiled in 64 bit. If you know how to compile CGNS and inclu
 I'm currently still dealing with my graduate thesis thus I have no time to write a makefile in order that the program could be easily compiled for Linux. But I'll achieve this as soon as possible since the program should obey free software spirit. :-) We are struggling for the development of humman beings but not money!!
 
 ### Thanks
-To my forever lover, 19850726! Wish you will have a bright future!
+Thanks to G.A. Bird for his program code and Yazhong Jiang for his kind help during the development. 
+
 
 
 ### Copyright © Han Luo
